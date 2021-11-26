@@ -1,0 +1,15 @@
+.searchthing {
+    width: 30% !important;
+    display: flex !important;
+    flex-direction: row-reverse !important;
+}
+
+
+
+.searchform {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 10px 10px;
+}
+
