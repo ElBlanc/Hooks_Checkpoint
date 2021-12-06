@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../MovieCard/MovieCard.css";
+import { Rate } from 'antd';
 
 const MovieCard = ({ movieTitle, description, rating, posterUrl,prePosterUrl }) => {
   const [steps, setSteps] = useState(1);
@@ -33,7 +34,7 @@ const MovieCard = ({ movieTitle, description, rating, posterUrl,prePosterUrl }) 
             <div className="stilltesting">
             <div className="movieTitle">{movieTitle}</div>
             <div className="movieDescription">{description}</div>
-            <div className="movieRating">{rating}/ 10 </div>
+            <div className="movieRating"><Rate disabled defaultValue={rating}/></div>
             </div>
           </div>
         </div>
